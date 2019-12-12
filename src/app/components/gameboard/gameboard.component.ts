@@ -11,8 +11,7 @@ export class GameboardComponent implements OnInit {
 
   constructor(public boardsService:BoardsService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 start (hola:string) {
 
   this.hola = this.boardsService.hola(hola)

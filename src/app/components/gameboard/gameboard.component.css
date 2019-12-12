@@ -1,30 +1,43 @@
 #gameboard {
-            height: 100vh;
-            width: 100vw;
-            background-image: linear-gradient(to bottom, #67d2ef, #9fdafb, #cbe4ff, #ebf0ff, #ffffff);
-            padding-top: 20px;
-        }
-        
-        @media screen and (min-width:770px) and (max-width:992px) {
-            #playerOne,
-            #playerTwo {
-                padding-top: 130px;
-            }
-            .row {
-                justify-content: center;
-            }
-        }
-        
-        @media screen and (min-width:320px) and (max-width:770px) {
-            #playerOne,
-            #playerTwo {
-                margin: 0px;
-            }
-            .row {
-                justify-content: center;
-            }
-            /* main {
-                    display: flex;
-                    justify-self: center;
-                } */
-        }
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, #67d2ef, #9fdafb, #cbe4ff, #ebf0ff, #ffffff);
+    padding-top: 20px;
+}
+
+.row {
+    justify-content: space-around !important;
+}
+
+@media screen and (min-width:770px) and (max-width:992px) {
+    #playerOne,
+    #playerTwo {
+        padding-top: 130px;
+    }
+    .row {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:770px) {
+    #playerOne,
+    #playerTwo {
+        margin: 0px;
+    }
+    .row {
+        justify-content: space-around !important;
+    }
+    main {
+        display: flex;
+        justify-content: space-between !important;
+        grid-template-columns: 30px 30px 30px;
+        background-size: cover;
+    }
+    app-square {
+        height: 30px;
+    }
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
